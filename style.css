@@ -1,0 +1,60 @@
+   
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color:lightblue;
+}
+h1{
+    color:red;
+    margin-left:650px;
+    font-style: italic;
+}
+
+p{
+    color:blue;
+    font-style: italic;
+}
+
+a {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover {
+    color:yellowgreen;
+    text-decoration: wavy;
+}
+
+img{
+    border: 3px solid;
+    border-radius: 20px;
+    margin: 15px solid;
+    outline-style:groove;
+}
+
+table{
+    border-collapse: collapse;
+    width: 40%;
+    font-style: italic;
+}
+
+th, td{
+border:1px solid;
+padding: 8px;
+text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+
+ul{
+    list-style-type:decimal;
+    font-style:italic;
+}
+
+
+  
+  
+
