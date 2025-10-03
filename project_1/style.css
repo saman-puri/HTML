@@ -1,0 +1,264 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: lightblue;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and navigation */
+header {
+    background: url(https://images.squarespace-cdn.com/content/v1/5a87961cbe42d637c54cab93/1609407120831-C85BU87UWQY3YCMLC1VQ/trail-thorong-la-tea-house-annapurna-circuit.jpg);
+    background-position: center;
+    background-size: cover;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px;
+    font-style: italic;
+    margin: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.menu a:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.heading_2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.introduction {
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    border-radius: 10px;
+    list-style-type:none;
+}
+
+.introduction h3{
+    margin-bottom: 0px;
+}
+
+.introduction p{
+    padding-left: 100px;
+
+}
+.travel-card{
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.Spots{
+    text-align: center;
+    
+}
+
+/* Original Images Class from first page */
+.images {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.images:hover {
+    transform: scale(1.05);
+}
+
+.subtitle{
+    font-weight: bold;
+}
+
+/* Enhanced Gallery Styles */
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    gap: 70px;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 310px;
+    height: 310px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px gray;
+    position: relative;
+    font-weight: bold;
+}
+
+.gallery-item:hover {
+     transform: scale(1.1);
+    box-shadow: 0 8px 16px blue;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: white;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery-caption h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.gallery-caption p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+
+/*Travel Tips*/
+.Tips {
+    background: lightblue;
+    padding: 20px;
+}
+
+.Tips ul {
+    padding: 0;
+    list-style: decimal;
+}
+
+.Tips li {
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.Tips{
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.Tips_1{
+    text-align: left;
+    padding-left:0;
+}
+/*About me*/
+
+
+.about_me_paragraph {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: left;
+    margin: 20px 0;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+   
+}
+
+
+
+
+
+/* Footer */
+.f1 {
+    font-weight: lighter;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #27355b;
+    opacity: 0.6;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Container for main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+    margin-bottom: 80px; /* To prevent footer overlap */
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    
+    .menu ul {
+        display: block; /* Vertical menu */
+    }
+}
